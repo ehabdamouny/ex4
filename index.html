@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="includes/styles.css">
+         <link href="https://fonts.googleapis.com/css?family=Amiko" rel="stylesheet">
+         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<title>My Form</title>
+    </head>
+	<body>
+         <header>
+            <nav>
+                <button onclick="location.href='http://shenkar.html5-book.co.il/2018-2019/web1/dev_17/exercises/ex4/login.html'" type="button" class="btn btn-outline-light">Login</button>
+            </nav>
+        </header>
+        <main>
+                <div id="wrapper">
+                        <form action="http://html5-book.co.il/teach/forms/get_form2.php" method="GET">
+                                <div class="form-group">
+                                  <label>Full Name</label>
+                                  <input type="text" name="fullname" value="" class="form-control" placeholder="Full name">
+                                </div>
+                                <div class="form-group">
+                                  <label>Password</label>
+                                  <input type="password" name="pass" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                                </div>
+                                <div class="form-group">
+                                    <label>Email address</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                                    <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+                                </div>
+                                <div class="form-group">
+                                <label>Your Website</label>
+                                <input  type="url" name="website" value="" class="form-control" placeholder="Enter Website" >
+                                </div>
+                                <div class="form-group">
+                                <label>Phone Number</label>
+                                <input type="tel" name="phone" value="" class="form-control" placeholder="+972">
+                                </div>
+                                <div class="form-group">
+                                <label>Adress</label>
+                                <input type="text" name="adress" value="" class="form-control" placeholder="Address">
+                                </div>
+                                <div class="clear"></div>
+
+                                <div class="form-group">
+                                        <label>Gender</label>
+                                        <div class="custom-control custom-radio">
+                                          <input type="radio" id="customRadio1" name="gender" class="custom-control-input">
+                                          <label class="custom-control-label" value="Male" for="customRadio1">Male</label>
+                                        </div>
+                                        <div class="custom-control custom-radio">
+                                          <input type="radio" id="customRadio2" name="gender" class="custom-control-input">
+                                          <label class="custom-control-label" value="Female" for="customRadio2">Female</label>
+                                        </div>
+                                </div>
+                                <div class="form-group">
+                                            <label for="validationDefaultAge">Age</label>
+                                            <input type="number" class="form-control" id="validationDefaultAge" placeholder="18" name="age" required>
+                                </div>
+                                <div class="clear"></div>
+                                <div class="form-group1">
+                                        <label>Interests</label>
+                                            <select class="browser-default custom-select">
+                                                <option selected>Choose one</option>
+                                                <option value="1">Coding</option>
+                                                <option value="2">Surfing</option>
+                                                <option value="3">Driving</option>
+                                                <option value="4">Traveling</option>
+                                              </select>
+                                </div>
+                                <div class="temper">
+                                    <label >Temper</label>
+                                    <input type="range" name="temper" class="form-control-range" id="formControlRange" min="0" max="100">
+                                    <label>0</label>
+                                    <label id="label-temper-right">100</label>
+                                </div>
+                                <div class="temper">
+                                        <label for="formControlRange">Cups of coffee you drink per day</label>
+                                        <input type="range" name="temper" class="form-control-range" id="formControlRange" min="0" max="100">
+                                        <label>0</label>
+                                        <label id="label-temper-right">50</label>
+                                </div>
+                                <div class="clear"></div>
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                        </form>
+        </main>
+        </div>
+        <footer>     
+        </footer>       
+	</body>
+</html>
